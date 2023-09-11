@@ -1,0 +1,133 @@
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.carousel {
+  width: 100%;
+  max-width: 1200px;
+  position: fixed;
+}
+
+.carousel .carousel-slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.carousel .control-arrow {
+  width: 40px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(55, 88, 83, 0.697);
+  color: white;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0.5; 
+  transition: background-color 0.3s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel .control-prev {
+  left: 10px;
+}
+
+.carousel .control-next {
+  right: 10px;
+}
+.fondo {
+  background-image: url('./img/fondito1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  opacity: 1;
+}
+
+.menu {
+  display: flex;
+  background-color: rgba(55, 88, 83, 0.697);
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.menu button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: #18b49a;
+  padding: 1.25rem 0.9375rem;
+  font: inherit;
+  outline: none;
+  font-size: 1.25rem;
+}
+
+.banner {
+  width: 75%;
+}
+
+.noticias {
+  margin: 1.25rem;
+}
+
+.noticias h2 {
+  font-size: 6.25rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+  color: #18b49a;
+}
+
+.noticia {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.25em;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.noticia h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.625rem;
+}
+
+.fecha {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 0.625rem;
+}
+
+.noticia p {
+  font-size: 1rem;
+}
+
+.ver-mas {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.3125rem 0.625rem;
+  border-radius: 0.25em;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 0.625rem;
+  cursor: pointer;
+}
+
+.ver-mas:hover {
+  background-color: #0056b3;
+}
+footer {
+  background-color: #18b49a;
+  color: white;
+  text-align: center;
+  padding: 0.625rem 0;
+  font-weight: bold;
+}
