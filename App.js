@@ -6,7 +6,6 @@ import Nav from './Nav';
 import Noticias from './Noticias'; 
 import Footer from './Footer';
 
-
 function Menu() {
   const handleButtonClick = (event) => {
     event.preventDefault();
@@ -20,8 +19,9 @@ function Menu() {
   return (
     <div className="fondo">
       <img src={img} alt="Banner" className="banner" style={{ width: '100%' }} />
-      <Nav /> 
+      <Nav handleButtonClick={handleButtonClick} buttonStyle={buttonStyle} /> 
       <Noticias /> 
+      <Footer />
     </div>
   );
 }
