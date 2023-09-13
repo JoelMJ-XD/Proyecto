@@ -2,12 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 70px;
+  margin-bottom: 4.375rem;
 }
 
 .carousel {
   width: 100%;
-  max-width: 1200px;
+  max-width: 75rem;
   position: fixed;
 }
 
@@ -19,16 +19,16 @@
 }
 
 .carousel .control-arrow {
-  width: 40px;
-  height: 50px;
+  width: 2.5rem;
+  height: 3.125rem;
   border-radius: 50%;
   background-color: rgba(55, 88, 83, 0.697);
   color: white;
-  font-size: 24px;
-  line-height: 50px;
+  font-size: 1.5rem;
+  line-height: 3.125rem;
   text-align: center;
   cursor: pointer;
-  opacity: 0.5; 
+  opacity: 0.5;
   transition: background-color 0.3s ease;
   position: absolute;
   top: 50%;
@@ -36,12 +36,13 @@
 }
 
 .carousel .control-prev {
-  left: 10px;
+  left: 0.625rem;
 }
 
 .carousel .control-next {
-  right: 10px;
+  right: 0.625rem;
 }
+
 .fondo {
   background-image: url('./img/fondito1.jpg');
   background-size: cover;
@@ -75,11 +76,7 @@
   width: 75%;
 }
 
-.noticias {
-  margin: 1.25rem;
-}
-
-.noticias h2 {
+h2 {
   font-size: 6.25rem;
   margin-bottom: 1.25rem;
   text-align: center;
@@ -88,46 +85,50 @@
 
 .noticia {
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 0.0625em solid #ddd;
   border-radius: 0.25em;
   padding: 1.25rem;
   margin-bottom: 1.25rem;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.noticia:hover {
+  box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.2);
+  background-color: #f7f7f7;
 }
 
 .noticia h3 {
-  font-size: 1.25rem;
+  font-size: 2rem;
   margin-bottom: 0.625rem;
+  color: #333;
+  transition: color 0.3s ease;
 }
 
-.fecha {
-  font-size: 0.875rem;
-  color: #666;
-  margin-bottom: 0.625rem;
+.noticia:hover h3 {
+  color: #18b49a;
 }
 
 .noticia p {
   font-size: 1rem;
+  color: #666;
 }
 
-.ver-mas {
-  display: inline-block;
-  background-color: #007bff;
-  color: #fff;
-  padding: 0.3125rem 0.625rem;
-  border-radius: 0.25em;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 0.625rem;
-  cursor: pointer;
+.noticia img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
 }
 
-.ver-mas:hover {
-  background-color: #0056b3;
-}
 footer {
   background-color: #18b49a;
   color: white;
   text-align: center;
   padding: 0.625rem 0;
   font-weight: bold;
+}
+
+.grande-verde {
+  font-size: 7rem;
+  color: #29a985;
 }
