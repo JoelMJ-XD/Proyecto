@@ -1,26 +1,34 @@
 import React from 'react';
-import BotonMenu from './BotonMenu';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-function Nav({ handleButtonClick, buttonStyle }) {
+function Home() {
+  return <h2>Inicio</h2>;
+}
+
+function Ruta1() {
+  return <h2>Ruta 1</h2>;
+}
+
+function Ruta2() {
+  return <h2>Ruta 2</h2>;
+}
+
+function Nav() {
   return (
-    <nav className="menu">
-      <ul>
-        <BotonMenu label="Hoy" onClick={handleButtonClick} style={buttonStyle} />
-        <BotonMenu label="Live" onClick={handleButtonClick} style={buttonStyle} />
-        <BotonMenu label="Clima" onClick={handleButtonClick} style={buttonStyle} />
-        <BotonMenu label="Deportes" onClick={handleButtonClick} style={buttonStyle} />
-        <BotonMenu label="LATAM" onClick={handleButtonClick} style={buttonStyle} />
-        <BotonMenu label="EE.UU" onClick={handleButtonClick} style={buttonStyle} />
-        <BotonMenu label="México" onClick={handleButtonClick} style={buttonStyle} />
-        <BotonMenu label="Política" onClick={handleButtonClick} style={buttonStyle} />
-        <BotonMenu label="Opinión" onClick={handleButtonClick} style={buttonStyle} />
-        <BotonMenu label="Economía" onClick={handleButtonClick} style={buttonStyle} />
-        <BotonMenu label="Mundo" onClick={handleButtonClick} style={buttonStyle} />
-        <BotonMenu label="Estados" onClick={handleButtonClick} style={buttonStyle} />
-        <BotonMenu label="Capital" onClick={handleButtonClick} style={buttonStyle} />
-        <BotonMenu label="Sociedad" onClick={handleButtonClick} style={buttonStyle} />
-      </ul>
-    </nav>
+       <nav>
+          <ul>
+            <li>
+              <Link to="/">Inicio</Link>
+            </li>
+            <li>
+              <Link to="/ruta1">Ruta 1</Link>
+            </li>
+            <li>
+              <Link to="/ruta2">Ruta 2</Link>
+            </li>
+          </ul>
+        </nav>
+
   );
 }
 
