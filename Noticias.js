@@ -8,7 +8,7 @@ import './App.css';
 
 function Noticias() {
   const imageStyle = {
-    width: '45%', 
+    width: '55%', 
   };
 
   return (
