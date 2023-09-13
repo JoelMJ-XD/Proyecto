@@ -2,6 +2,7 @@ import React from 'react';
 import img1 from './img/mañanero.jpg';
 import img2 from './img/huracan.jpg';
 import img3 from './img/brics.jpg';
+import Contacto from './img/fasda.jpg';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './App.css';
@@ -40,11 +41,11 @@ function Noticias() {
           </div>
         </Carousel>
       </div>
-      <h2 className="grande-verde">Últimas Noticias</h2>
+      <h2 className="grande-verde" style={{ fontFamily: 'Century' }}>Últimas Noticias</h2>
       <div className="noticias">
         <div className="noticia">
           <CustomLink url="URL_para_Noticia1">
-            <img src="https://th.bing.com/th?id=OIF.Azm1dfFVsFru7%2bkjeHxRmQ&pid=ImgDet&rs=1" alt="Foto Noticia" style={{ width: '30rem' }} />
+            <img src="https://th.bing.com/th?id=OIF.Azm1dfFVsFru7%2bkjeHxRmQ&pid=ImgDet&rs=1" alt="Foto Noticia" style={{ width: '25rem' }} />
           </CustomLink>
           <h3>
             <CustomLink url="URL_para_Noticia1">
@@ -57,7 +58,7 @@ function Noticias() {
         </div>
         <div className="noticia">
           <CustomLink url="URL_para_Noticia2">
-            <img src="https://cdn-3.expansion.mx/dims4/default/46acd9f/2147483647/strip/true/crop/1600x1075+0+0/resize/1800x1209!/format/webp/quality/80/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F72%2F51%2F7b2d57994f04808b0a57d38f7172%2Fmananera-13-septiembre.jpeg" alt="Foto Noticia 2" style={{ width: '30rem' }} />
+            <img src="https://cdn-3.expansion.mx/dims4/default/46acd9f/2147483647/strip/true/crop/1600x1075+0+0/resize/1800x1209!/format/webp/quality/80/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F72%2F51%2F7b2d57994f04808b0a57d38f7172%2Fmananera-13-septiembre.jpeg" alt="Foto Noticia 2" style={{ width: '25rem' }} />
           </CustomLink>
           <h3>
             <CustomLink url="URL_para_Noticia2">
@@ -70,7 +71,7 @@ function Noticias() {
         </div>
         <div className="noticia">
           <CustomLink url="URL_para_Noticia4">
-            <img src="https://images.milenio.com/CR9fHXA_MtgOz79g4Y_txRC0Wqg=/942x532/uploads/media/2023/09/13/huracan-lee-vira-norte-pasara.jpg" alt="Foto Noticia 4" style={{ width: '30rem' }} />
+            <img src="https://images.milenio.com/CR9fHXA_MtgOz79g4Y_txRC0Wqg=/942x532/uploads/media/2023/09/13/huracan-lee-vira-norte-pasara.jpg" alt="Foto Noticia 4" style={{ width: '25rem' }} />
           </CustomLink>
           <h3>
             <CustomLink url="URL_para_Noticia4">
@@ -81,6 +82,13 @@ function Noticias() {
             El huracán Lee, de categoría y significativamente más grande, seguirá creciendo a medida que avanza por el Océano Atlántico a lo largo de la costa este de Estados Unidos...
           </p>
         </div>
+      </div>
+      <div className="contacto" style={{ fontFamily: 'Century' }}>
+        <h3>Contacto</h3>
+        <p>Para más información, contáctenos en:</p>
+        <p>Email: contacto@tuempresa.com</p>
+        <p>Teléfono: +123456789</p>
+        <img src="https://th.bing.com/th/id/OIP.XuhSlZQbROFxwaBYsnJbyQHaHa?pid=ImgDet&rs=1" alt="Contacto" style={{ width: '400px' }} />
       </div>
     </div>
   );
